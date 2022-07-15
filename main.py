@@ -13,9 +13,3 @@ def print_hi(name):
 # 按间距中的绿色按钮以运行脚本。
 if __name__ == '__main__':
     print_hi('PyCharm')
-
-# 访问 https://www.jetbrains.com/help/pycharm/ 获取 PyCharm 帮助
-str = 'hello1231hghtr2412dd'
-data = re.search('hello(.*?)2dd', str)
-print(type(data))
-print(data[1])
