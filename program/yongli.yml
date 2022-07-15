@@ -1,0 +1,14 @@
+- name: 天气查询
+  request:
+    method: get
+    url: http://api.wpbom.com/api/daygas.php
+    data:
+      msg: 厦门
+      b: 3
+
+- name: 手机归属地查询
+  request:
+    method: get
+    url: http://api.wpbom.com/api/bution.php
+    data:
+      msg: 18759738338
