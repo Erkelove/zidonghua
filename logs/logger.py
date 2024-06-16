@@ -3,7 +3,7 @@ import os.path
 import time
 
 BASEPATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-LogPath = os.path.join(BASEPATH, 'log')
+LogPath = os.path.join(BASEPATH, 'logs')
 if not os.path.exists(LogPath):
     os.mkdir(LogPath)
 
