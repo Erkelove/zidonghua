@@ -1,0 +1,18 @@
+-
+  feature: 登录模块
+  story: 获取token接口
+  title: 获取token接口成功
+  request:
+    url: https://edusys.xmdas-link.com/auth/login/teacher
+    method: POST
+    data:
+      "user": "chenls"
+      "pass": "j7JH21YaQU1E6scNQt47xg=="
+      "bizState": "teacher_pc"
+      "randstr": "@obT"
+      "ticket": "tr03QAsYLXdk7prLI9qry--P1ViiZdBsgzMMUPyOoI9rzYzylTEa9zTfKPcvfsVzGGQPQw-2g5bAzAn2grJHODF8KcU3Oq_v75Gq971Vwfrus-zcggGDTG5P_-PCSEBeLIe1KaOw1KyA29dWnmHUYKcm95HTfKvVjowSGZ4jrM6LwqNAH2qOl3ptiwxn9WKDbJW-Yosc4HEtI-s*"
+  extract:
+    token: $.data.token
+  validate:
+    code: 1
+    contains: null
