@@ -1,0 +1,12 @@
+-
+  feature: 教师端模块
+  story: 获取当前登录教师任教的所有科目、年级和班级
+  title: 获取当前登录教师任教的所有科目、年级和班级成功
+  request:
+    url: https://edusys.xmdas-link.com/teacher/class/my/list
+    method: GET
+    headers:
+      X-Token: "${read_Yaml(token)}"
+  validate:
+    code: 1
+    contains: null
