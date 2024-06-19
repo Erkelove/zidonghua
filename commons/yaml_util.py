@@ -9,7 +9,7 @@ def write_yaml(data):
         yaml.dump(data, stream=f, allow_unicode=True)
 
 
-#读取
+#读取1
 def read_yaml(key):
     with open(os.getcwd()+"/extract.yaml", encoding="utf-8", mode='r')as f:
         value = yaml.load(f, yaml.FullLoader)
