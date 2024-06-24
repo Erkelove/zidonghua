@@ -19,7 +19,7 @@ class TestApi():
     yaml_file_paths = get_all_yaml_files(testcase_path)
     print(type(yaml_file_paths), yaml_file_paths)
     if not yaml_file_paths:
-        print("yaml文件路径未获取")
+        print("yaml文件路径未获得")
     else:
         file_paths = ['./Login/get_token.yaml', './Teacher/my_list.yaml']
         #print("测试用例路径："+f"{yaml_file_paths}")
